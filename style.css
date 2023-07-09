@@ -1,0 +1,171 @@
+/* Sticky Navbar Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: #ffebde;
+}
+
+.navbar {
+  max-height: 100px;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.navbar .logo {
+  margin: 20px;
+  
+}
+
+.navbar .logo img {
+  margin-left: 100px;
+  border-radius: 50%;
+  max-height: 100px;
+  /* Adjust the height of the logo as needed */
+}
+
+.navbar .nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.navbar .nav-links li {
+  margin: 0 40px;
+}
+
+.navbar .nav-links li a {
+  color: #333;
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+}
+
+.navbar .nav-links li a:hover {
+  color: #ff8c00;
+}
+
+.container {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 10vh;
+}
+
+.image-container {
+ margin: 100px;
+  min-height: 40vh;
+  position: relative;
+}
+
+.image-container img {
+  max-height: 500px;
+  position: absolute;
+  top: 30%;
+  margin-left: 800px;
+  transform: translate(-50%, -50%);
+  animation: rotate 10s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+.content-container {
+  min-width: 200px;
+  padding: 20px;
+  margin-top: -900px;
+  margin-left: 200px;
+
+}
+
+h1 {
+  max-width: 600px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 3rem;
+  color: black;
+  font-weight: bold;
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  width: 100%;
+  max-width: 500px;
+  font-size: 1.5rem;
+}
+
+.btn {
+  margin-top: 20px;
+  border-radius: 2%;
+  width: 200px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  display: inline-block;
+  font-size: 1.5rem;
+  padding: 10px;
+  color: white;
+  background: red;
+  height: 50px;
+}
+
+/* Cards */
+
+/* .food-item{
+  display: flex;
+} */
+.food-item{
+  margin: 20px;
+  margin-top: 80px;
+  min-width: 200px;
+}
+.food-item ul {
+  text-decoration: none;
+  display: flex;
+}
+.food-item ul li {
+ 
+  list-style: none;
+}
+.food-item ul li img{
+  max-height: 500px;
+  border-top-left-radius: 10%;
+  border-top-right-radius: 10%;
+  margin:20px;
+  
+}
+.food-item ul li h3{
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 20px;
+  font-size: 2rem;
+ 
+}
+button{
+  max-height: 80px;
+  min-width: 300px;
+  background-color: red;
+  border: none;
+  color: white;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 20px;
+  font-size: 2rem;
+ 
+}
